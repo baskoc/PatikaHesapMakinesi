@@ -1,0 +1,25 @@
+actor HesapMakinesi {
+  // Toplama
+  public func toplama(x: Float, y: Float): async Float {
+    return x + y;
+  };
+
+  // Çıkarma
+  public func cikarma(x: Float, y: Float): async Float {
+    return x - y;
+  };
+
+  // Çarpma
+  public func carpma(x: Float, y: Float): async Float {
+    return x * y;
+  };
+
+  // Bölme
+  public func bolme(x: Float, y: Float): async ?Float { 
+    if (y == 0.0) {
+      return null; // Sıfıra bölme durumunda null döner
+    } else {
+      return ?(x / y);
+    };
+  };
+};
